@@ -27,10 +27,12 @@ body {
   font-size: 14px;
   margin-left: 5px;
 }
-.notifications p {
+
+.notifications .mark-all {
   color: var(--Dark-grayish-blue);
   cursor: pointer;
 }
+
 .container img {
   width: 40px;
   margin-right: 15px;
@@ -53,6 +55,16 @@ body {
 .perfil .coment p {
   color: var(--Grayish-blue);
 }
+
+.unread p:first-of-type::after {
+  content: "";
+  background-color: var(--Red);
+  width: 10px;
+  height: 10px;
+  margin-left: 5px;
+  display: inline-block;
+  border-radius: 50%;
+}
 .perfil .coment .click {
   font-weight: 800;
   cursor: pointer;
@@ -67,6 +79,9 @@ body {
   cursor: pointer;
   margin-top: 10px;
 }
+.perfil .coment .active-coment:hover {
+  background-color: var(--Light-grayish-blue-1);
+}
 .perfil .coment .date {
   color: var(--Grayish-blue);
 }
@@ -76,25 +91,24 @@ body {
   padding: 10px;
 }
 
-.unread p:first-of-type::after {
-  content: "";
-  background-color: var(--Red);
-  width: 10px;
-  height: 10px;
-  margin-left: 5px;
-  display: inline-block;
-  border-radius: 50%;
-}
 
 .perfil .avatar-rigth {
   text-align: end;
+  cursor: pointer;
 }
 .perfil .avatar-rigth img {
   width: 40px;
   margin-right: 0;
 }
 
-/* itens ativos */
-.perfil .coment .active-coment.active {
-  background-color: var(--Light-grayish-blue-1);
+/* Estados ativos */
+.notifications .mark-all.click {
+  color: var(--Blue);
+}
+.perfil.unread.read {
+  background-color: var(--White);
+}
+
+.unread.none p:first-of-type::after {
+  content: none;
 }

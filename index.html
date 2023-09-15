@@ -24,9 +24,9 @@
     <title>Frontend Mentor | Notifications page</title>
     <main class="container">
       <div class="notifications">
-        <h3>Notifications <span>3</span></h3>
+        <h3>Notifications <span class="btn-count">3</span></h3>
 
-        <p>Mark all as read</p>
+        <p class="mark-all click">Mark all as read</p>
       </div>
       <section class="comments">
         <div class="perfil unread">
@@ -37,7 +37,7 @@
             />
           </div>
           <div class="coment">
-            <p>
+            <p class="description">
               <span class="name">Mark Webber</span> reacted to your recent post
               <span class="click"> My first tournament today!</span>
             </p>
@@ -52,8 +52,8 @@
               alt=" angela gray"
             />
           </div>
-          <div class="coment unread">
-            <p>
+          <div class="coment">
+            <p class="description">
               <span class="name"> Angela Gray</span>
               followed you
             </p>
@@ -65,12 +65,12 @@
           <div class="avatar">
             <img src="./src/images/avatar-jacob-thompson.webp" alt=" jacob" />
           </div>
-          <div class="coment unread">
-            <p>
+          <div class="coment">
+            <p class="description">
               <span class="name"> Jacob Thompson </span>
-              has joined your group
+              has joined your group <span class="click blue">Chess Club</span>
             </p>
-            <p class="click blue">Chess Club</p>
+
             <p class="date">1 day ago</p>
           </div>
         </div>
@@ -143,9 +143,9 @@
           <div class="coment">
             <p>
               <span class="name"> Anna Kim </span>
-              left the group  <span class="click blue">Chess Club</span>
+              left the group <span class="click blue">Chess Club</span>
             </p>
-           
+
             <p class="date">2 weeks ago</p>
           </div>
         </div>
@@ -160,5 +160,6 @@
       >. Coded by <a href="#"><span>Jessica Oliveira</span></a
       >.
     </div>
+    <script src="./index.js"></script>
   </body>
 </html>
