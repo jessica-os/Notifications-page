@@ -32,6 +32,9 @@ body {
   color: var(--Dark-grayish-blue);
   cursor: pointer;
 }
+.notifications .mark-all:hover {
+  color: var(--Blue);
+}
 
 .container img {
   width: 40px;
@@ -51,6 +54,9 @@ body {
   color: var(--Very-dark-blue);
   font-weight: 800;
   cursor: pointer;
+}
+.perfil .coment .name:hover {
+  color: var(--Blue);
 }
 .perfil .coment p {
   color: var(--Grayish-blue);
@@ -91,7 +97,6 @@ body {
   padding: 10px;
 }
 
-
 .perfil .avatar-rigth {
   text-align: end;
   cursor: pointer;
@@ -100,15 +105,11 @@ body {
   width: 40px;
   margin-right: 0;
 }
-
-/* Estados ativos */
-.notifications .mark-all.click {
-  color: var(--Blue);
+.attribution{
+  text-align: center;
+  color: var(--Grayish-blue);
 }
-.perfil.unread.read {
-  background-color: var(--White);
-}
-
-.unread.none p:first-of-type::after {
-  content: none;
+.attribution span{
+  color: var(--Dark-grayish-blue);
+  font-weight: 800;
 }

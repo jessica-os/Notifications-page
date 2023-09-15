@@ -1,24 +1,21 @@
 const countButton = document.querySelector(".btn-count");
 const markAll = document.querySelector(".mark-all");
-const unread = document.querySelectorAll(".unread");
-const description = document.querySelectorAll(".description");
+const unReadMessages = document.querySelectorAll(".unread");
 
-markRead();
-btnMarkAllRead();
+countButton.innerText = unReadMessages.length;
 
-function markRead() {
-  unread.forEach((item) => {
-    item.addEventListener("click", () => {
-      item.classList.add("read");
-      item.classList.add("none");
-    });
+unReadMessages.forEach((message) => {
+  message.addEventListener("click", () => {
+    message.classList.remove("unread");
+    const newUnReadMessages = document.querySelectorAll(".unread");
+    countButton.innerText = newUnReadMessages.length;
   });
-}
-function btnMarkAllRead(item) {
-  markAll.addEventListener("click", () => {
-    unread.forEach((item) => {
-      item.classList.add("read");
-    item.classList.add("none")
-    });
+});
+
+markAll.addEventListener("click", () => {
+  unReadMessages.forEach((message) => {
+    message.classList.remove("unread");
+    const newUnReadMessages = document.querySelectorAll(".unread");
+    countButton.innerText = newUnReadMessages.length;
   });
-}
+});
