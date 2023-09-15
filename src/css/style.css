@@ -1,0 +1,100 @@
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 12px;
+}
+.container {
+  background-color: var(--White);
+  padding: 20px;
+}
+.container .notifications {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.notifications h3 {
+  font-weight: 800;
+}
+.notifications h3 span {
+  background-color: var(--Blue);
+  color: var(--White);
+  padding: 3px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  margin-left: 5px;
+}
+.notifications p {
+  color: var(--Dark-grayish-blue);
+  cursor: pointer;
+}
+.container img {
+  width: 40px;
+  margin-right: 15px;
+}
+.container .coment {
+  width: 100%;
+}
+.container .perfil {
+  display: flex;
+  border-radius: 5px;
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.perfil .coment .name {
+  color: var(--Very-dark-blue);
+  font-weight: 800;
+  cursor: pointer;
+}
+.perfil .coment p {
+  color: var(--Grayish-blue);
+}
+.perfil .coment .click {
+  font-weight: 800;
+  cursor: pointer;
+}
+.perfil .coment .click.blue {
+  color: var(--Blue);
+}
+.perfil .coment .active-coment {
+  border: 1px solid var(--grayish-blue-2);
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.perfil .coment .date {
+  color: var(--Grayish-blue);
+}
+
+.perfil.unread {
+  background-color: var(--Very-light-grayish-blue);
+  padding: 10px;
+}
+
+.unread p:first-of-type::after {
+  content: "";
+  background-color: var(--Red);
+  width: 10px;
+  height: 10px;
+  margin-left: 5px;
+  display: inline-block;
+  border-radius: 50%;
+}
+
+.perfil .avatar-rigth {
+  text-align: end;
+}
+.perfil .avatar-rigth img {
+  width: 40px;
+  margin-right: 0;
+}
+
+/* itens ativos */
+.perfil .coment .active-coment.active {
+  background-color: var(--Light-grayish-blue-1);
+}

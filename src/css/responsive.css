@@ -1,0 +1,15 @@
+@media (min-width: 688px) {
+  body {
+    background-color: var(--Very-light-grayish-blue);
+    font-size: 16px;
+  }
+  .container {
+    max-width: 700px;
+    max-height: 700px;
+    margin: 30px;
+   
+    
+  }
+ 
+ 
+}
