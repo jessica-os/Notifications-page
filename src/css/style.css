@@ -105,11 +105,11 @@ body {
   width: 40px;
   margin-right: 0;
 }
-.attribution{
+.attribution {
   text-align: center;
   color: var(--Grayish-blue);
 }
-.attribution span{
+.attribution span {
   color: var(--Dark-grayish-blue);
   font-weight: 800;
 }
